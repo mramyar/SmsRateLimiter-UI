@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>SMS Rate Limiter Dashboard</h2>
+  
+    <div class="input-section">
+      <input type="text" [(ngModel)]="phoneNumber" placeholder="Phone Number" />
+      <input type="text" [(ngModel)]="accountId" placeholder="Account ID" />
+      <button (click)="checkSmsLimit()">Check</button>
+    </div>
+  
+    <div *ngIf="canSend !== null">
+      <h3>SMS Check Result:</h3>
+      <p *ngIf="canSend" class="success">✅ You can send the message.</p>
+      <p *ngIf="!canSend" class="error">❌ Message limit exceeded!</p>
+    </div>
+  </div>
+  
