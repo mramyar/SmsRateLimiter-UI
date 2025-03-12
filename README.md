@@ -1,6 +1,7 @@
 # SmsRateLimiterUI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+This is a simple UI that allows users to input a phone number and account ID to check whether they can send a sms.
 
 ## Development server
 
